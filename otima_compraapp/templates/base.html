@@ -1,0 +1,24 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Título Padrão{% endblock %}</title>
+    <!-- Incluir links para folhas de estilo CSS, scripts JavaScript, etc. -->
+</head>
+<body>
+    <header>
+        <!-- Conteúdo do cabeçalho -->
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Conteúdo principal que será substituído nas páginas filhas -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Conteúdo do rodapé -->
+    </footer>
+</body>
+</html>
